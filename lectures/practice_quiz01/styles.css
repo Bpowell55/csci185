@@ -1,0 +1,28 @@
+
+img {
+   
+    width: 200px;
+}
+
+nav {
+   
+    border: solid 10px black;
+    
+}
+
+header, footer {
+    background-color:aquamarine;
+}
+
+section {
+    width:  400px;
+    display: inline-block;
+    border: solid;
+}
+
+#sec2 {
+    background-color: rgb(135, 36, 193);
+}
+footer>p{
+    font-weight: bold;
+}
