@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -40,6 +41,7 @@ code {
 .card img {
     width: 100%;
     border: solid 2px #000;
+    
 }
 
 footer {
@@ -47,6 +49,7 @@ footer {
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 main {
@@ -57,10 +60,22 @@ main {
 .card:nth-child(odd){
     background-color: #EEEEEE;
    
-
 }
 
 .card:nth-child(even){
     background-color: #bce5d6;
 }
+ 
+p:nth-child(1) {
+    font-weight: bold;
+}
 
+#card1 img {
+    border-radius: 50%;
+}
+#card3 img {
+    border-radius: 50%;
+}
+#card5 img {
+    border-radius: 50%;
+}
