@@ -60,11 +60,11 @@ h2{
     border-color: coral;
 }
 
-body > main {
-    display: grid;
-     align-items: start; 
-    grid-template-columns: 20fr 10fr;
-
-    column-gap: 2fr;
-    row-gap: 5fr;
+main {
+    display:grid;
+    align-items: start; 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 20px;
 }
