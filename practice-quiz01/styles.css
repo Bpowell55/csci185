@@ -39,6 +39,7 @@ footer {
     padding-bottom: 100px;
 }
 
-#mountians, #sand {
+#mountians, #sand, #rocks {
     padding-right: 15px;
+    padding-left: 15px;
 }
