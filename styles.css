@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fefefe;
+    background-color: #e6e6e6;
+background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fbf9fe' fill-opacity='0.69' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
 }
 header {
     margin: 10px;
@@ -12,9 +13,10 @@ header {
         background: linear-gradient(-45deg, #a1c2ea, #b6f4da, #75d1f3, #e4a8f6);
         background-size: 300% 20%;
         animation: gradient 15s ease infinite;
-        height: 20vh;
+        height: 30vh;
         text-align: center;
-        padding-top: 20px;
+        padding:60px
+        
     }
     @keyframes gradient {
         0% {
@@ -34,7 +36,6 @@ section {
     border: solid; width: 300px;
     padding: 20px 5vh;
     margin: 50px;
-    text-align: left;
 }
 
 h2{ 
@@ -47,14 +48,23 @@ h2{
 }
 #homework {
     background-color: #cefae8;
-    border-color: #86f7c8;
+    border-color: #6dfabf;
 }
 #class-exercises {
     background-color: #b5e8fa;
     border-color: #50c4ee;
+    
 }
 #inspiration {
     background-color: rgb(247, 211, 187);
     border-color: coral;
 }
 
+body > main {
+    display: grid;
+     align-items: start; 
+    grid-template-columns: 20fr 10fr;
+
+    column-gap: 2fr;
+    row-gap: 5fr;
+}
