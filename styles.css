@@ -45,19 +45,23 @@ h2{
 #tutorials {
     background-color:#e8e3f8;
     border-color: #e4a8f6;
+    font-size: 25px;
 }
 #homework {
     background-color: #cefae8;
     border-color: #6dfabf;
+    font-size: 25px;
 }
 #class-exercises {
     background-color: #b5e8fa;
     border-color: #50c4ee;
+    font-size: 25px;
     
 }
 #inspiration {
     background-color: rgb(247, 211, 187);
     border-color: coral;
+    font-size: 20px;
 }
 
 main {
