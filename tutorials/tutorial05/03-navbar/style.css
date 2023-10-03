@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    border: solid black 2px;
+   
+}
+
+h1 { 
+   align-self: center;
+   
+}
+
+ul,li {
+    display: flex;
+    list-style: none;
+    border: 2px black solid;
+    
+}
+
+li {
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+
+}
+
+ul {
+    padding-right: 40px;
+
+}
+ 
+a { 
+    border: solid black 2px;
+    padding: 10px;
+
+}

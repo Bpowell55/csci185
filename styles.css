@@ -59,16 +59,13 @@ h2 {
     
 }
 #inspiration {
-    background-color: rgb(247, 211, 187);
-    border-color: coral;
+    background-color: rgb(199, 217, 249);
+    border-color: rgb(42, 122, 241);
     font-size: 20px;
 }
 
-main {
-    display:grid;
-    align-items: start; 
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    column-gap: 30px;
-    row-gap: 20px;
+#quizzes {
+    background-color: antiquewhite;
+    border-color: coral;
+    font-size: 20px;
 }

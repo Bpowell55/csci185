@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* create additional rules below:  */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#home {
+    background-color: rgb(28, 213, 213);
+    padding: 200px;
+  
+}
+
+#bio {
+    background-color: rgb(98, 155, 204);
+    padding: 200px;
+   
+}
+
+#portfolio {
+    background-color: aquamarine;
+    padding: 200px;
+    
+}
+
+#contact {
+    background-color: rgb(68, 174, 174);
+    padding: 200px;
+    
+}
+
+p, h2 {
+    text-align: center;
+}
