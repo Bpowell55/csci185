@@ -2,21 +2,30 @@
 * {
     box-sizing: border-box;
 }
-body{
+body {
+    display: grid;
     background-color: #e6e6e6;
-background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fbf9fe' fill-opacity='0.69' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fbf9fe' fill-opacity='0.69' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
 }
 header {
-    margin: 10px;
-    
-    
         background: linear-gradient(-45deg, #a1c2ea, #b6f4da, #75d1f3, #e4a8f6);
         background-size: 300% 20%;
         animation: gradient 15s ease infinite;
-        height: 30vh;
+        height: 45vh;
         text-align: center;
-        padding:60px
-        
+        text-justify:inter-word
+        padding:60px;
+        margin: -10px;
+        font-size: 35px;
+
     }
     @keyframes gradient {
         0% {
@@ -32,21 +41,29 @@ header {
 }
 
 section {
-   
+    
     border: solid; width: 300px;
     padding: 20px 5vh;
     margin: 50px;
+    font-family: 'papyrus';
+    text-align: left;
+    
+
 }
 
-h2 { 
-    text-align: center;  
+h2, h3 { 
+    text-align: center; 
+    font-family:'kranky';
 }
+
+
 
 #tutorials {
     background-color:#e8e3f8;
     border-color: #e4a8f6;
     font-size: 25px;
 }
+
 #homework {
     background-color: #cefae8;
     border-color: #6dfabf;
@@ -68,4 +85,14 @@ h2 {
     background-color: antiquewhite;
     border-color: coral;
     font-size: 20px;
+}
+#about {
+    background-color:#e8e3f8;
+    border-color: #e4a8f6;
+    font-size: 15px;   
+}
+img {
+max-width: 80%;
+max-height: 60%;
+ text-align: center;
 }
