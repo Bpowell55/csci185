@@ -21,8 +21,8 @@ header {
         animation: gradient 15s ease infinite;
         height: 45vh;
         text-align: center;
-        text-justify:inter-word
-        padding:60px;
+        text-justify:inter-word;
+        padding:  60px;
         margin: -10px;
         font-size: 35px;
 
@@ -42,9 +42,11 @@ header {
 
 section {
     
-    border: solid; width: 300px;
-    padding: 20px 5vh;
-    margin: 50px;
+    border: solid; 
+    width: 400px;
+    height: fit-content;
+    padding: 20px 10vh;
+    margin: 25px;
     font-family: 'papyrus';
     text-align: left;
     
@@ -61,18 +63,18 @@ h2, h3 {
 #tutorials {
     background-color:#e8e3f8;
     border-color: #e4a8f6;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 #homework {
     background-color: #cefae8;
     border-color: #6dfabf;
-    font-size: 25px;
+    font-size: 20px;
 }
 #class-exercises {
     background-color: #b5e8fa;
     border-color: #50c4ee;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 #inspiration {

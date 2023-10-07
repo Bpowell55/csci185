@@ -1,3 +1,47 @@
 body {
+
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10vh;
+    min-width: fit-content;
+    min-height: fit-content;
+    object-fit: contain;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    object-fit: contain;
+
+}
+
+section {
+    
+    display: grid;
+    display: flex;
+    grid-template-columns:  60% 40%;
+    border: solid 1px gray ;
+    margin: 18px;
+    text-align: left;
+    padding: 20px;
+    padding-left: 25px;
+
+}
+
+h2 {
+    font-size: 25px;
+
+}
+
+p, span {
+    color: gray;
+    font-size: 20px;
+    
+}
+
+img {
+    object-fit: contain;
+    justify-self: end;
+    padding-top: 15px;
+   
 }
