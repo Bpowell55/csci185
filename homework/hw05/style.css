@@ -83,8 +83,35 @@ footer {
 /***************************/
 
 /* Your Code Here */
+.container {
+    display: flex;
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+#upgrade {
+    border: solid whitesmoke;
+    border-radius: 20px;
+    border-he
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 60px;
+    
+   
+}
 
+a:hover {
+
+    color: gray;
+    
+}
 
 
 
