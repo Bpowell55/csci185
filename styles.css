@@ -57,7 +57,12 @@ h2, h3 {
     font-family:'kranky';
 }
 
+#project {
+    background-color: antiquewhite;
+    border-color: coral;
+    font-size: 20px;
 
+}
 
 #tutorials {
     background-color:#e8e3f8;
@@ -87,12 +92,7 @@ h2, h3 {
     border-color: coral;
     font-size: 20px;
 }
-#project{
-    background-color: antiquewhite;
-    border-color: coral;
-    font-size: 20px;
 
-}
 #about {
     background-color:#e8e3f8;
     border-color: #e4a8f6;
