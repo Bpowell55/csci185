@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#grid > div {
+    border: solid 2px #000;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+#square1 {
+    background-color: red;
+    
+}
+#square2 {
+    background-color: rgb(39, 94, 123);
+    
+}
+#square3 {
+    background-color: rgb(0, 255, 217);
+    
+}
+#square4 {
+    background-color: rgb(0, 255, 94);
+    
+}
+#square5 {
+    background-color: rgb(0, 255, 123);
+    
+}
+#square6 {
+    background-color: rgb(180, 149, 12);
+    
+}

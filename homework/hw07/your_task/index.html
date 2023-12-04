@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Spotify Player</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script type="text/javascript" src="main.js" defer></script>
+    </head>
+    <body id="container">
+        <aside id="sidebar">
+            <h1>
+                <i class="fab fa-spotify"></i>
+                Spotify
+            </h1>
+            <a class="selected" href="#">
+                <i class="fas fa-search"></i>
+                Search
+            </a>
+        </aside>
+
+        <main>
+            <header>
+                <i class="fas fa-search"></i>
+                <input type="search" 
+                    placeholder="Search for Artists or Songs" 
+                    id="search" 
+                    value="" />
+            </header>
+            <article id="featured-content">
+                <section id="artist-section">
+                    <h1>Top Result</h1>
+                    <section id="artist">
+                        <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
+                            <div>
+                                <img src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa">
+                                <h2>BTS</h2>
+                                <div class="footer">
+                                    <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
+                                        view on spotify
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <section id="track-section">
+                    <h1>Songs</h1>
+                    <section id="tracks">First 5 tracks go here.</section>
+                    <section class="track-item preview">
+                        <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428">
+                        <i class="fas play-track fa-play" aria-hidden="true"></i>
+                        <div class="label">
+                            <h2>Black Swan</h2>
+                            <p>
+                                BTS
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <section id="album-section">
+                    <h1>Albums</h1>
+                    <section id="albums">Albums go here.</section>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
