@@ -57,6 +57,7 @@ async function getTracks(term) {
 `;
     document.querySelector("#tracks").innerHTML = template;
 }
+}
 
 async function getAlbums(term) {
     console.log(`
@@ -66,20 +67,20 @@ async function getAlbums(term) {
 }
 
 async function getArtist(term) {
-    //get query
-    const url = 'https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}';
+    //get query //NOTE: BACK-TICS!! BACK TIC BACK TIOC BACK TIC
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`; //NOTE SING QUOTES BUT BACK TICS!!
 
     const response = await fetch(url);
-    const artistData = await response.json();
+    const artistData = await response.json(); //give me the data
     console.log(artistData);
     const artist = artistData[0];
 
     //update templete
 
     const template = `                   
-    <section class="artist-card" id="${artist.image_url}">
+    <section class="artist-card" id="${artist.id}">
     <div>
-        <img src="${artist.id}">
+        <img src="${artist.id_url}">
         <h2>${artist.name}</h2>
         <div class="footer">
             <a href="${artist.spotify_url}" target="_blank">
@@ -90,7 +91,7 @@ async function getArtist(term) {
 </section>
 `;
     //disply to screen        
-    document.querySelector("#artist").innnerHTML = template;
+    document.querySelector('#artist').innerHTML = template;
 }
 
 
@@ -103,5 +104,4 @@ document.querySelector('#search').onkeyup = function (ev) {
         ev.preventDefault();
         search();
     }
-}
 }
