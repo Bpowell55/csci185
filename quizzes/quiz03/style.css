@@ -17,27 +17,3 @@ body {
     width: 200px;
     cursor: pointer;
 }
-#square1 {
-    background-color: red;
-    
-}
-#square2 {
-    background-color: rgb(39, 94, 123);
-    
-}
-#square3 {
-    background-color: rgb(0, 255, 217);
-    
-}
-#square4 {
-    background-color: rgb(0, 255, 94);
-    
-}
-#square5 {
-    background-color: rgb(0, 255, 123);
-    
-}
-#square6 {
-    background-color: rgb(180, 149, 12);
-    
-}
