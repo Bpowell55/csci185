@@ -12,41 +12,40 @@ function search(ev) {
     }
 }
 
-function playTrack(trackID){
- const template =`
- <iframe style="border-radius:12px" 
- src="https://open.spotify.com/embed/track/${trackID}?utm_source=generator"
- width="100%" 
- height="352" 
- frameBorder="0" 
- allowfullscreen="" 
- allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
- loading="lazy"></iframe>
- `;
- document.querySelector("#artist").innerHTML = template;
-
+function playTrack(trackId) {
+    const template = `
+<iframe 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator"
+    width="100%" 
+    height="352" 
+    frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+</iframe>
+`;
+    document.querySelector("#artist").innerHTML = template;
 }
 
-
-
 async function getTracks(term) {
-    const url = 'https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}';
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
     const response = await fetch(url);
     const trackData = await response.json();
-    console.log(trackData);
+
 
     //clar tracks
     document.querySelector("#tracks").innerHTML = "";
 
-    //2. loop through track data
-    for (let i = 0; i < 5; i++){
+    //2. loop through track data and display first 5 tracks
 
+    for (let i = 0; i < 5; i++) {
+        const track = trackData[i];
+        console.log(trackData);
 
-    const track = trackData[i];
-
-    const template = `
-    <section class="track-item preview" onclick="playTrack("${track.id})">
-    <img src="${track.album.image_url}">
+        const template = `
+    <section class="track-item preview" onclick = "playTrack('${track.id}')">
+    <img src="${track.album.image_url}">  
     <i class="fas play-track fa-play" aria-hidden="true"></i>
     <div class="label">
         <h2>${track.name}</h2>
@@ -55,8 +54,8 @@ async function getTracks(term) {
     </div>
 </section>
 `;
-    document.querySelector("#tracks").innerHTML = template;
-}
+        document.querySelector("#tracks").innerHTML += template;
+    }
 }
 
 async function getAlbums(term) {
@@ -68,7 +67,7 @@ async function getAlbums(term) {
 
 async function getArtist(term) {
     //get query //NOTE: BACK-TICS!! BACK TIC BACK TIOC BACK TIC
-    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`; //NOTE SING QUOTES BUT BACK TICS!!
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`; //NOT SINGle QUOTES BUT BACK TICS!!
 
     const response = await fetch(url);
     const artistData = await response.json(); //give me the data
@@ -80,7 +79,7 @@ async function getArtist(term) {
     const template = `                   
     <section class="artist-card" id="${artist.id}">
     <div>
-        <img src="${artist.id_url}">
+        <img src="${artist.image_url}">
         <h2>${artist.name}</h2>
         <div class="footer">
             <a href="${artist.spotify_url}" target="_blank">

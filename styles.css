@@ -103,3 +103,8 @@ max-width: 80%;
 max-height: 60%;
  text-align: center;
 }
+#finalExam {
+    background-color:#84c7ec;
+    border-color: #2a2aec;
+    font-size: 15px; 
+}
