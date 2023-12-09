@@ -33,7 +33,6 @@ async function getTracks(term) {
     const response = await fetch(url);
     const trackData = await response.json();
 
-
     //clar tracks
     document.querySelector("#tracks").innerHTML = "";
 
@@ -58,12 +57,50 @@ async function getTracks(term) {
     }
 }
 
+
+
+
+
+
+
+
+
+
 async function getAlbums(term) {
-    console.log(`
-        get albums from spotify based on the search term
-        "${term}" and load them into the #albums section 
-        of the DOM...`);
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
+    const response = await fetch(url);
+    const albumData = await response.json(); //give me the data
+    console.log(albumData);
+    const album = albumData[0];
+
+    document.querySelector("#albums").innerHTML = " ";
+    for (let i = 0; i < 100; i++) {
+        const album = albumData[i];
+        console.log(albumData);
+        const template = `
+        <section class="album-card" id="${album.id}">
+        <div>
+            <img src="${album.image_url}">
+            <h2>${album.name}</h2>
+            <div class="footer">
+                <a href="https://open.spotify.com/album/${term}" target="_blank">
+                    view on spotify
+                </a>
+            </div>
+        </div>
+    </section>
+    `;
+
+    document.querySelector("#albums").innerHTML += template;
 }
+}
+
+
+
+
+
+
+
 
 async function getArtist(term) {
     //get query //NOTE: BACK-TICS!! BACK TIC BACK TIOC BACK TIC
@@ -92,9 +129,6 @@ async function getArtist(term) {
     //disply to screen        
     document.querySelector('#artist').innerHTML = template;
 }
-
-
-
 
 document.querySelector('#search').onkeyup = function (ev) {
     // Number 13 is the "Enter" key on the keyboard
