@@ -9,8 +9,6 @@ let overEgg = false;
 let locked = false;
 
 
-
-
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
@@ -60,8 +58,6 @@ function draw() {
     circle(655, 250, 5);
     circle(755, 250, 5);
 
-
-
     // mouth open:
     // fill ('black')
     // ellipse(700, 350, 105, 60);           //mouth coordinate
@@ -73,7 +69,7 @@ function draw() {
     fill(255);
     stroke(5);
     strokeWeight(4);
-    text('Feed me eggs for a surprise!', 500, 50);
+    text('Feed me eggs!', 500, 50);
 
     //text for Egg 1:
     textSize(15);
@@ -93,8 +89,8 @@ function draw() {
     // Egg to move around
     fill('#C4FFF7')
     ellipse(eggX, eggY, 30, 40);
-   
-         //(x coor, y-coor, width, height) this is moving egg
+
+    //(x coor, y-coor, width, height) this is moving egg
 
     if (
         mouseX > eggX - 40 &&             //eggX :egg's x-coor  
@@ -109,7 +105,7 @@ function draw() {
         overEgg = false;
     }
 
-    if (eggX >= 695 && eggX <= 705 || eggY >= 355 && eggY <= 345) {
+    if ((eggX >= 695 && eggX <= 705 ) && (eggY >= 345 && eggY <= 355)) {
         fill('black')
         ellipse(700, 350, 105, 60);
 
@@ -118,9 +114,9 @@ function draw() {
         fill(245, 66, 105);
         stroke(5);
 
-        text('Surprise! I am not a cannibal. Nice Try!', 400, 100);
+        text('I am not a cannibal! Take it out!!', 400, 100);
     }
-    else if ( (mouseX >= 680 && mouseX <=694) && (mouseY <= 365 && mouseY >= 335) ) {
+    else if ((mouseX >= 720 && mouseX <= 730) && (mouseY <= 320 && mouseY >= 310)) {
         fill('black')
         ellipse(700, 350, 105, 60);
 
