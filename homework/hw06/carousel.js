@@ -18,8 +18,8 @@ let idx = 0;
     (2) update the caption inside of the .caption paragraph
 */
 function showImage() {
-    console.log('Show image');
-}
+    
+ 
 
 
 /* This function should set the idx variable 
@@ -29,7 +29,8 @@ function showImage() {
    the array, set idx to 0.
 */
 function forward() {
-    console.log('forward');
+   
+    forward ()
 }
 
 
